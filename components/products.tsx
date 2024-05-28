@@ -32,7 +32,7 @@ const Products = () => {
 
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
-          <div className="relative flex items-center h-1/2 w-1/2 ">
+          <div className="relative flex items-center lg:h-1/2 lg:w-1/2 ">
             <Image src={selectedImage} width={1000} height={1000} alt="Selected Product" />
             <button onClick={closeModal} className="absolute top-0 right-0 m-4 text-white text-2xl">&times;</button>
           </div>
