@@ -4,7 +4,7 @@ import Products from "@/components/products";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main>
       <Hero />
       <Products />
     </main>

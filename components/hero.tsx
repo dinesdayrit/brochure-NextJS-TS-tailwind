@@ -1,10 +1,16 @@
+import Image from "next/image";
 
 const Hero = () => {
   return (
-    <>
-      <img src='hero.png' className="w-screen lg:h-[40rem] mb-10 h-screen lg:rounded-br-full"/>
-    </>
-  )
+    <div className="relative w-screen lg:h-[40rem] h-screen mb-10">
+      <Image
+        src="/hero.png"
+        layout="fill"
+        className="lg:rounded-br-full"
+        alt="Hero image"
+      />
+    </div>
+  );
 }
 
-export default Hero
+export default Hero;
