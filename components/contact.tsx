@@ -30,15 +30,15 @@ const Contact = () => {
   <div className="max-w-sm mx-auto">
     <h1 className="text-3xl font-bold text-gray-100 mb-4">Contact Us</h1>
     <div className="bg-sky-700 rounded-lg shadow-lg p-6">
+      
+      <div className="mt-4 flex gap-2">
+      <img src='email.svg' width={20}/>
+        <p className="text-gray-100">armand@bradwell.ph</p>
+      </div>
 
       <div className="mt-4 flex gap-2 items-start">
         <img src='loc.svg' width={20}/>
         <p className="text-gray-100">84 Malakas St. Brgy. Pinyahan Quezon City</p>
-      </div>
-
-      <div className="mt-4 flex gap-2">
-      <img src='email.svg' width={20}/>
-        <p className="text-gray-100">armand@bradwell.ph</p>
       </div>
 
       <div className="mt-4 flex gap-2 items-start mb-8">
