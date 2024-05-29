@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="bg-custom-gradient py-12 px-4 sm:px-6 lg:px-8">
   <div className="max-w-sm mx-auto">
     <h1 className="text-3xl font-bold text-gray-100 mb-4">Contact Us</h1>
-    <div className="bg-sky-600 rounded-lg shadow-lg p-6">
+    <div className="bg-sky-600 rounded-lg shadow-2xl p-6">
       
       <div className="mt-4 flex gap-2">
       <img src='email.svg' width={20}/>
