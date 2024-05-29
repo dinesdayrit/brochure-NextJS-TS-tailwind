@@ -20,8 +20,9 @@ const Products = () => {
 
   return (
     <div className="mt-16 flex flex-col items-center">
-      <h1 className="font-bold text-5xl mb-6">Our Products</h1>
-      <div className="grid grid-cols-2 gap-4">
+      <h1 className="font-bold text-5xl">Our Products</h1>
+      <p className="lg:hidden">Tap the Product to zoom</p>
+      <div className="grid grid-cols-2 gap-4 mt-6">
         <Image src="/p1.png" width={500} height={500} alt="Product 1" onClick={() => openModal("/p1.png")} />
         <Image src="/p2.png" width={500} height={500} alt="Product 2" onClick={() => openModal("/p2.png")} />
         <Image src="/p3.png" width={500} height={500} alt="Product 3" onClick={() => openModal("/p3.png")} />
