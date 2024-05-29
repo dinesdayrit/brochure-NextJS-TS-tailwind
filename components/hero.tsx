@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="relative w-screen lg:h-[40rem] h-screen mb-10">
+    <div className="relative lg:h-[35rem] h-screen">
       <Image
         src="/hero.png"
         layout="fill"
