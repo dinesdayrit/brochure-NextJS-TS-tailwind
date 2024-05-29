@@ -10,7 +10,7 @@ const Contact = () => {
           alt="Footer"
         />
       </div>
-      <div className="absolute flex flex-col justify-center bottom-16 text-white py-4 px-6">
+      <div className="absolute flex flex-col justify-center lg:items-center w-full bottom-20 lg:bottom-32 text-white py-4 px-6">
         <h2 className="text-2xl font-bold mb-2">Contact Us</h2>
 
         <div className="mt-4 flex gap-2"> <img src='loc.svg' width={20}/><p>84 Malakas St. Brgy. Pinyahan Quezon City</p> </div>
