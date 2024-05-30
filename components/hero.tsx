@@ -1,8 +1,17 @@
 import Image from "next/image";
 
+
 const Hero = () => {
   return (
     <div className="relative h-screen" id="home">
+      {/* mobile screen and tablet */}
+      <div className="lg:hidden">
+      <Image
+        src="/hero.png"
+        layout="fill"
+        alt="Hero image"
+      />
+      </div>
 
       {/* bigger screen */}
       <div className="hidden lg:block">      
