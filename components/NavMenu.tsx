@@ -15,10 +15,10 @@ const NavMenu = () => {
       <div className="flex justify-end items-center h-full w-full px-4 2xl:px-16 bg-orange-500">
         <div>
             <ul className="hidden sm:flex gap-4">
-                <li className="uppercase hover:border-b text-xl text-stone-100">Products</li>
-                <li className="uppercase hover:border-b text-xl text-stone-100">Other Products</li>
-                <li className="uppercase hover:border-b text-xl text-stone-100">Industries we serve</li>
-                <li className="uppercase hover:border-b text-xl text-stone-100">Contact</li>
+                <li className="uppercase hover:border-b text-stone-100">Products</li>
+                <li className="uppercase hover:border-b text-stone-100">Other Products</li>
+                <li className="uppercase hover:border-b text-stone-100">Industries we serve</li>
+                <li className="uppercase hover:border-b text-stone-100">Contact</li>
             </ul>
         </div>
         <div onClick={handleNav} className="md:hidden cursor-pointer pl-25">
