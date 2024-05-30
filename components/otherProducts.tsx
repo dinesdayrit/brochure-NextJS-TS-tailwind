@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const OtherProducts = () => {
   return (
-    <div className="mt-16 flex flex-col items-center mb-18">
+    <div className="mt-16 flex flex-col items-center mb-18" id="otherProducts">
       <h1 className="font-bold text-5xl mb-6">Other Products</h1>
       <div className="grid grid-cols-2  lg:grid-cols-4 gap-4 lg:gap-8 p-8">
         <div className="flex flex-col items-center">

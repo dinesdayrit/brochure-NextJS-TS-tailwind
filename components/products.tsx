@@ -19,7 +19,7 @@ const Products = () => {
   };
 
   return (
-    <div className="mt-16 flex flex-col items-center">
+    <div className="mt-16 flex flex-col items-center" id="products">
       <h1 className="font-bold text-5xl">Our Products</h1>
       <p className="lg:hidden">Tap the Product to zoom</p>
       <div className="grid grid-cols-2 gap-4 mt-6">

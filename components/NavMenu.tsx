@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from 'react';
-import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { Link } from 'react-scroll';
 
 const NavMenu = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -15,10 +16,18 @@ const NavMenu = () => {
       <div className="flex justify-end items-center h-full w-full px-4 2xl:px-16 bg-orange-500">
         <div>
             <ul className="hidden sm:flex gap-4">
-                <li className="uppercase hover:border-b text-stone-100">Products</li>
-                <li className="uppercase hover:border-b text-stone-100">Other Products</li>
-                <li className="uppercase hover:border-b text-stone-100">Industries we serve</li>
-                <li className="uppercase hover:border-b text-stone-100">Contact</li>
+                <li className="uppercase hover:border-b text-stone-100">
+                <Link to="products" smooth={true} duration={800}>Products</Link>
+                </li>
+                <li className="uppercase hover:border-b text-stone-100">
+                <Link to="otherProducts" smooth={true} duration={800}>Other Products</Link>
+                </li>
+                <li className="uppercase hover:border-b text-stone-100">
+                <Link to="industry" smooth={true} duration={800}>Industries we serve</Link>
+                </li>
+                <li className="uppercase hover:border-b text-stone-100">
+                <Link to="contact" smooth={true} duration={800}>Contact</Link>
+                </li>
             </ul>
         </div>
         <div onClick={handleNav} className="md:hidden cursor-pointer pl-25">
@@ -36,10 +45,21 @@ const NavMenu = () => {
         </div>
         </div>
             <ul className="flex flex-col">
-                <li className="py-4 cursor-pointer" onClick={handleNav}>Products</li>
-                <li className="py-4 cursor-pointer" onClick={handleNav}>Other Products</li>
-                <li className="py-4 cursor-pointer" onClick={handleNav}>Industries we serve</li>
-                <li className="py-4 cursor-pointer" onClick={handleNav}>Contact</li>
+                <li className="py-4 cursor-pointer">
+                <Link to="products" smooth={true} duration={800} onClick={handleNav}>Products</Link>
+                </li>
+
+                <li className="py-4 cursor-pointer">
+                <Link to="otherProducts" smooth={true} duration={800} onClick={handleNav}>Other Products</Link>
+                </li>
+               
+                <li className="py-4 cursor-pointer">
+                <Link to="industry" smooth={true} duration={800} onClick={handleNav}>Industries we serve</Link>
+                </li>
+                
+                <li className="py-4 cursor-pointer">
+                <Link to="contact" smooth={true} duration={800} onClick={handleNav}>Contact</Link>
+                </li>
             </ul>
         </div>
       </div>

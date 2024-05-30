@@ -22,7 +22,7 @@ const Hero = () => {
        />
        <div className="absolute h-full w-full bg-white bg-opacity-40">
         <div className="flex flex-col justify-end items-end h-1/2 w-1/2">
-        <h1 className="text-sky-500 font-bold text-8xl">Bradwell</h1>
+        <h1 className="text-blue-500 font-bold text-8xl">Bradwell</h1>
        <p className="text-orange-500 font-bold text-2xl">SALES & MARKETING CORP</p>
        <p className="text-black font-bold text-l">PASSION FOR INNOVATION</p>
         </div>
