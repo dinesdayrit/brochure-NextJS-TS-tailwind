@@ -29,12 +29,12 @@ const Products = () => {
       <h1 className="font-bold text-5xl">Our Products</h1>
       <p className="lg:hidden">Tap the Product to zoom</p>
       <div className="grid grid-cols-2 gap-4 mt-6">
-        <Image src={p1} width={500} height={500} alt="Product 1" onClick={() => openModal("/p1.png")} priority/>
-        <Image src={p1} width={500} height={500} alt="Product 2" onClick={() => openModal("/p2.png")} priority/>
-        <Image src={p3} width={500} height={500} alt="Product 3" onClick={() => openModal("/p3.png")} priority/>
-        <Image src={p4} width={500} height={500} alt="Product 4" onClick={() => openModal("/p4.png")} priority/>
-        <Image src={p5} width={500} height={500} alt="Product 5" onClick={() => openModal("/p5.png")} priority/>
-        <Image src={p6} width={500} height={500} alt="Product 6" onClick={() => openModal("/p6.png")} priority/>
+        <Image src={p1} width={500} height={500} alt="Product 1" onClick={() => openModal(p1.src)} priority/>
+        <Image src={p1} width={500} height={500} alt="Product 2" onClick={() => openModal(p2.src)} priority/>
+        <Image src={p3} width={500} height={500} alt="Product 3" onClick={() => openModal(p3.src)} priority/>
+        <Image src={p4} width={500} height={500} alt="Product 4" onClick={() => openModal(p4.src)} priority/>
+        <Image src={p5} width={500} height={500} alt="Product 5" onClick={() => openModal(p5.src)} priority/>
+        <Image src={p6} width={500} height={500} alt="Product 6" onClick={() => openModal(p6.src)} priority/>
       </div>
 
       {isOpen && (
