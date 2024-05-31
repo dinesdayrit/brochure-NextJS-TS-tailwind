@@ -24,7 +24,7 @@ const Hero = () => {
          className="absolute h-screen w-screen"
          priority
        />
-       <div className="absolute h-full w-full bg-white bg-opacity-60">
+       <div className="absolute h-full w-full bg-white bg-opacity-55">
         <div className="flex flex-col justify-center items-center h-full md:w-1/2">
           <Image src={HeroLogo} alt="bradwell logo" className="h-[25rem]" priority/>
         </div>
