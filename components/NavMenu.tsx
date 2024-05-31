@@ -28,7 +28,7 @@ const NavMenu = () => {
     }, []);
 
     return (
-        <nav className={`fixed w-full h-24 shadow-xl z-10 ${navBg} transition-colors duration-500`}>
+        <nav className={`fixed w-full h-24 z-10 ${navBg} transition-colors duration-500`}>
             <div className="flex justify-end items-center h-full w-full px-4 2xl:px-16">
                 <div>
                     <ul className="hidden sm:flex gap-4">
