@@ -24,8 +24,17 @@ const config: Config = {
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         aurora: "aurora 60s linear infinite",
+        "meteor-effect": "meteor 5s linear infinite",
       },
       keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-1000px)",
+            opacity: "0",
+          },
+        },
         aurora: {
           from: {
             backgroundPosition: "50% 50%, 50% 50%",

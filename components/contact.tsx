@@ -1,5 +1,7 @@
 import { Spotlight } from "./ui/Spotlight";
+import { Meteors } from "@/components/ui/meteors";
 import { BackgroundBeams } from "./ui/background-beams";
+
 
 const Contact = () => {
   const currentYear = new Date().getFullYear();
@@ -15,7 +17,26 @@ const Contact = () => {
           fill="purple"
         />
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
+        
       </div>
+
+      <div className="absolute inset-y-0 left-0">
+        <Meteors number={10}/>
+      </div> 
+
+      <div className="absolute inset-y-0 left-[50rem] ">
+        <Meteors number={10}/>
+      </div> 
+
+      <div className="absolute inset-y-[20rem] left-0">
+        <Meteors number={10}/>
+      </div> 
+
+      <div className="absolute inset-y-[20rem] left-[50rem]">
+        <Meteors number={10}/>
+      </div>
+
+    
 
       <div className="max-w-sm mx-auto relative">
         <h1 className="text-3xl font-bold text-gray-100 mb-4">Contact Us</h1>
@@ -76,7 +97,6 @@ const Contact = () => {
         </div>
       </div>
       <p className="text-white text-center mt-8">&copy; {currentYear} Bradwell. All rights reserved.</p>
-      <BackgroundBeams />
     </div>
   );
 };
