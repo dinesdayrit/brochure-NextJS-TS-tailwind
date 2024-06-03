@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import HeroImg from "@/assets/images/hero2.jpg";
-import HeroLogo from "@/assets/icons/logo.png";
 import { motion } from "framer-motion";
 import { AuroraBackground } from "@/components/ui/aurora-background";
+import { Button } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -22,17 +22,22 @@ const Hero = () => {
         >
           <Image
             src={HeroImg}
-            alt="Hero image1"
-            className="h-screen w-screen object-cover opacity-55"
+            alt="Hero image"
+            className="h-screen w-screen object-cover"
             priority
           />
-          <div className="absolute inset-0 flex items-center justify-center md:justify-start">
-            <Image
-              src={HeroLogo}
-              alt="bradwell logo"
-              className="h-[25rem]"
-              priority
-            />
+          <div className="absolute inset-0 max-w-full mx-auto p-4 flex flex-col justify-center bg-black bg-opacity-50">
+            <h1 className="text-5xl md:text-7xl bg-clip-text text-white text-center font-sans font-bold">
+              Ingredients for Meat Processing?
+            </h1>
+            <p className="text-gray-200 max-w-6xl mx-auto my-2 text-lg text-center">
+              Looking for top-notch raw materials for meat processing, tantalizing beverages, exquisite flavors,
+              and cutting-edge nutraceuticals? Look no further! At Bradwell,
+              your business. Whether you&apos;re sending order confirmations, we specialize in providing premium ingredients to take your products to the next level.
+            </p>
+            <button className="bg-orange-600 rounded-full text-white font-bold py-4 px-16 mx-auto w-auto">
+              Call Us Now!
+            </button>
           </div>
         </motion.div>
       </AuroraBackground>

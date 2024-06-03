@@ -1,8 +1,10 @@
 "use client";
 
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-scroll';
+import Logo from "@/assets/icons/logo.png";
 
 const NavMenu = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +16,7 @@ const NavMenu = () => {
 
     const changeNavBg = () => {
         if (window.scrollY >= 90) {
-            setNavBg('bg-stone-800');
+            setNavBg('bg-gray-100');
         } else {
             setNavBg('bg-transparent');
         }
@@ -29,25 +31,28 @@ const NavMenu = () => {
 
     return (
         <nav className={`fixed w-full h-24 z-10 ${navBg} transition-colors duration-500`}>
-            <div className="flex justify-end items-center h-full w-full px-4 2xl:px-16">
+            <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
+                <div>
+                    <Image src={Logo} width={100} alt="" priority/>
+                </div>
                 <div>
                     <ul className="hidden sm:flex gap-4">
-                        <li className="uppercase hover:border-b text-stone-100">
+                        <li className="uppercase hover:border-b text-orange-500">
                             <Link to="home" smooth={true} duration={800} activeClass="active" spy={true} offset={-80} className="cursor-pointer">
                                 Home
                             </Link>
                         </li>
-                        <li className="uppercase hover:border-b text-stone-100">
+                        <li className="uppercase hover:border-b text-orange-500">
                             <Link to="products" smooth={true} duration={800} activeClass="active" spy={true} offset={-80} className="cursor-pointer">
                                 Products
                             </Link>
                         </li>
-                        <li className="uppercase hover:border-b text-stone-100">
+                        <li className="uppercase hover:border-b text-orange-500">
                             <Link to="industry" smooth={true} duration={800} activeClass="active" spy={true} offset={-80} className="cursor-pointer">
                                 Industries we serve
                             </Link>
                         </li>
-                        <li className="uppercase hover:border-b text-stone-100">
+                        <li className="uppercase hover:border-b text-orange-500">
                             <Link to="contact" smooth={true} duration={800} activeClass="active" spy={true} offset={-80} className="cursor-pointer">
                                 Contact
                             </Link>
