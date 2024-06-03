@@ -30,7 +30,7 @@ const NavMenu = () => {
     }, []);
 
     return (
-        <nav className={`fixed w-full h-24 z-10 ${navBg} transition-colors duration-500`}>
+        <nav className={`fixed w-full lg:px-32 h-24 z-10 ${navBg} transition-colors duration-500`}>
             <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
                 <div>
                     <Image src={Logo} width={100} alt="" priority/>
